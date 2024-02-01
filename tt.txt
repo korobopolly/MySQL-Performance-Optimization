@@ -1,0 +1,11 @@
+# MySQL 컨테이너가 실행되었는지 확인 하는 방법:
+docker ps -a
+
+# MySQL Server 에 접속 방법
+docker exec -it mysql-container mysql -u root -p
+
+# MySQL 컨테이너 중지 방법
+docker stop mysql-container
+
+# MySQL 컨테이너 재실행 방법
+docker restart mysql-container
