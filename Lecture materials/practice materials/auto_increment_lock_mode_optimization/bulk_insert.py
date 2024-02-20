@@ -19,7 +19,7 @@ def insert_orders():
     try:
         with conn.cursor() as cursor:
             query = """
-            INSERT INTO orders (user_id, product_id, quantity, order_date)
+            INSERT INTO shopping_orders (user_id, product_id, quantity, order_date)
             SELECT user_id, product_id, quantity, NOW()
             FROM shopping_cart
             WHERE cart_added_date > '2021-01-01 00:00:00' AND cart_added_date <= NOW();
