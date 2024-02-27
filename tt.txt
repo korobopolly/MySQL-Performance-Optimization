@@ -9,3 +9,7 @@ docker stop mysql-container
 
 # MySQL 컨테이너 재실행 방법
 docker restart mysql-container
+
+# docker mysql 명령어
+dme = docker exec -it mysql-container bash
+drm = docker restart mysql-container
